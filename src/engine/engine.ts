@@ -1,7 +1,6 @@
 import type { Shape, CursorState } from '../types';
 import { Spring } from './spring';
 import { QuadTree } from './quadtree';
-import type { BoundingBox } from './quadtree';
 
 class AnimatedShape {
   public data: Shape;
