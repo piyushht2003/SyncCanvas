@@ -69,7 +69,6 @@ export class AntigravityEngine {
   private selectedShapeIds: Set<string> = new Set();
   
   private staticNeedsUpdate: boolean = true;
-  private viewportBounds: BoundingBox = { x: 0, y: 0, width: 0, height: 0 };
   
   // Camera state for pan and zoom
   private camera = { x: 0, y: 0, zoom: 1 };
@@ -97,7 +96,6 @@ export class AntigravityEngine {
     this.staticCtx.scale(dpr, dpr);
     this.activeCtx.scale(dpr, dpr);
     
-    this.viewportBounds = { x: 0, y: 0, width: rect.width * dpr, height: rect.height * dpr };
     this.staticNeedsUpdate = true;
   };
 
