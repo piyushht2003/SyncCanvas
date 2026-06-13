@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+@layer base {
+  html, body, #root {
+    @apply w-full h-full overflow-hidden bg-black text-white m-0 p-0;
+  }
+}
